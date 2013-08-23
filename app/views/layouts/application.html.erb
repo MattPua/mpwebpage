@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <%= render :partial => 'layouts/shared/header' %>
   <title>MyPage</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -11,4 +12,5 @@
 <%= yield %>
 
 </body>
+ <%= render :partial => 'layouts/shared/footer' %>
 </html>
