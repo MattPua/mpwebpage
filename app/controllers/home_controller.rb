@@ -1,4 +1,11 @@
 class HomeController < ApplicationController
-	def index
+	def extra
+	end
+
+	def about
+	end
+
+	def experiences
+		
 	end
 end

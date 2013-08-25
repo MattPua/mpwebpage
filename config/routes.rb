@@ -1,5 +1,8 @@
 MyPage::Application.routes.draw do
-  root :to =>'home#index'
+  root :to =>'home#about'
+  match 'about' => 'home#about'
+  match 'extra' => 'home#extra'
+  match 'experiences' => 'home#experiences'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
