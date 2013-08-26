@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 	def extra
-		@description = "Extra"
+		@description = "Hobbies & Interests"
 		
 	end
 
