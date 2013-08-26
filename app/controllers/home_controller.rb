@@ -9,7 +9,7 @@ class HomeController < ApplicationController
 	end
 
 	def experiences
-		@description = "Experiences"
+		@description = "Experience (XP)"
 	end
 
 	def contact
