@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <%= render :partial => 'layouts/shared/header' %>
-  <title>MyPage</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html style="background-color:#006699; color:white;">
+	<head>
+		<header>
+		  <%= render :partial => 'layouts/shared/header' %>
+		  <%= stylesheet_link_tag    "application", :media => "all" %>
+		  <%= javascript_include_tag "application" %>
+		  <%= csrf_meta_tags %>
+		</header>
+	</head>
+	<body>
+		
+			<%= yield %>
+		<!-- width:1095px; height:600px; margin:0 auto; -->
+		
+		<footer>
+			<%= render :partial => 'layouts/shared/footer' %>
+		</footer>
+	</body>
 
-<%= yield %>
-
-</body>
- <%= render :partial => 'layouts/shared/footer' %>
 </html>
