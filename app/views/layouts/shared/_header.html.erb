@@ -1,20 +1,42 @@
 <div style="height:150px;">
 	<!-- Use javascript to get current size of viewing screen instead -->
-	<h1 style="text-align:center; font-size:90px; font-family: Helvetica; font-weight:normal; text-shadow:1px 1px 2px #2c3e50; line-height:10px; margin-top:75px;">
+	<h1 style="text-align:center; font-size:90px; font-family: Helvetica; font-weight:normal; text-shadow:3px 3px 2px #2c3e50; line-height:10px; margin-top:75px;">
 		Matthew Pua
 	</h1>
+
 	<div>
-		<div style="text-align:center; margin:0 auto; width:300px;">
+		<div style="text-align:center; margin:0 auto; width:360px;">
 		
 				
 				<i style="margin-left:10px;"><%= link_to image_tag("/assets/Home_icon_black.png", style:"color:#006699; text-decoration:none; border-radius:15px; border:2px solid black; background-color:white;padding:15px; width:30px; height:30px;"), root_path %></i>
 
 			
 				<i style="margin-left:10px;"><%= link_to image_tag("/assets/plus_icon.png", style:"color:#006699; text-decoration:none; border-radius:15px; border:2px solid black; background-color:white;padding:15px; width:30px; height:30px;"), extra_path %></i>
-
+				
 				<i style="margin-left:10px;"><%= link_to image_tag("/assets/book_icon.png", style:"color:#006699; text-decoration:none; border-radius:15px; border:2px solid black; background-color:white;padding:15px; width:30px; height:30px;"), experiences_path %></i>
 
+				<i style="margin-left:10px;"><%= link_to image_tag("/assets/phone_icon.png", style:"color:#006699; text-decoration:none; border-radius:15px; border:2px solid black; background-color:white;padding:15px; width:30px; height:30px;"), contact_path %></i>
 			
 		</div>
 	</div>
+</div>
+
+<div style="background-color:white; color:#006699; border-radius: 30px;">
+	<h2 style="text-align:center; font-family:Helvetica; line-height: 2; font-weight:lighter; font-size:30px; border:3px solid black; border-radius:30px;">
+		<%= @description %>
+	</h2>
+	<% if !current_page?(root_path)%>
+		<div style="background-color: white; width: 65px; height: 64px; float:left;border: 3px solid black;overflow:hidden; border-radius: 30px;position: relative;top: -92px;left: -5px;">
+			<%= link_to image_tag("/assets/arrowLeft.png", style:"
+		    width: 40px; height: 40px;-webkit-transform: rotate(45deg);position: relative; -moz-transform:rotate(45deg);top: 15px;left: 15px;") , "" %>
+		</div>
+	<% end %>
+	<% if !current_page?(contact_path) %>
+		<div style="background-color: white; width: 65px; height: 64px; float:right;border: 3px solid black;overflow:hidden; border-radius: 30px;position: relative;top: -92px;">
+			<%= link_to image_tag("/assets/arrowRight.png", style:"
+		    width: 40px; height: 40px;-webkit-transform: rotate(45deg);position: relative; -moz-transform:rotate(45deg);top: 15px;left: 10px;") , "" %>
+		</div>
+	<% end %>
+
+	
 </div>

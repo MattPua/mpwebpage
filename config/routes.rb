@@ -3,6 +3,7 @@ MyPage::Application.routes.draw do
   match 'about' => 'home#about'
   match 'extra' => 'home#extra'
   match 'experiences' => 'home#experiences'
+  match 'contact' =>'home#contact'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
