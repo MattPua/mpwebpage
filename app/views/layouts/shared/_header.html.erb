@@ -29,13 +29,13 @@
 	<% if !current_page?(root_path)%>
 		<div style="background-color: white; width: 65px; height: 64px; float:left;border: 3px solid black;overflow:hidden; border-radius: 30px;position: relative;top: -92px;left: -5px;">
 			<%= link_to image_tag("/assets/arrowLeft.png", style:"
-		    width: 40px; height: 40px;-webkit-transform: rotate(45deg);position: relative; -moz-transform:rotate(45deg);top: 15px;left: 15px;") , "" %>
+		    width: 40px; height: 40px;-webkit-transform: rotate(45deg);position: relative; -moz-transform:rotate(45deg);top: 15px;left: 15px;") , @prevLink %>
 		</div>
 	<% end %>
 	<% if !current_page?(contact_path) %>
 		<div style="background-color: white; width: 65px; height: 64px; float:right;border: 3px solid black;overflow:hidden; border-radius: 30px;position: relative;top: -92px;">
 			<%= link_to image_tag("/assets/arrowRight.png", style:"
-		    width: 40px; height: 40px;-webkit-transform: rotate(45deg);position: relative; -moz-transform:rotate(45deg);top: 15px;left: 10px;") , "" %>
+		    width: 40px; height: 40px;-webkit-transform: rotate(45deg);position: relative; -moz-transform:rotate(45deg);top: 15px;left: 10px;") , @nextLink %>
 		</div>
 	<% end %>
 
