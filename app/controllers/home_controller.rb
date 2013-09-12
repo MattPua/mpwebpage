@@ -8,16 +8,16 @@ class HomeController < ApplicationController
 
 
 	def about
-		@description = "About Me"
+		@description = "Aspiring Leader | Startup Enthusiast | Engineering Student"
 		@nextLink=extra_path
 		@title="About"
 	end
 
 	def experiences
-		@description = "Experiences (XP)"
+		@description = "My History"
 		@nextLink=contact_path
 		@prevLink=extra_path
-		@title= "Experiences"
+		@title= "History"
 	end
 
 	def contact

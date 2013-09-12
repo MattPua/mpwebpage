@@ -1,43 +1,49 @@
 
-<div style="height:150px;">
+<div style="height:150px; margin-bottom:-15px; margin-left:40px; ">
 	<!-- Use javascript to get current size of viewing screen instead -->
-	<h1 style="text-align:center; font-size:90px; font-family: Helvetica; font-weight:normal; text-shadow:3px 3px 2px #2c3e50; line-height:10px; margin-top:75px;">
+	<h1 id="name" style="float:left; margin-left:100px;">
 		Matthew Pua
 	</h1>
 
 	<div>
-		<div style="text-align:center; margin:0 auto; width:360px;">
+		<div class="center navigation" style="float:left; margin-top:50px;">
 		
 				
-				<i style="margin-left:10px;"><%= link_to image_tag("/assets/Home_icon_black.png", style:"color:#006699; text-decoration:none; border-radius:15px; border:2px solid black; background-color:white;padding:15px; width:30px; height:30px;"), root_path %></i>
+				<i class="margin_left"><%= link_to image_tag("/assets/Home_icon_black.png"), root_path %></i>
 
 			
-				<i style="margin-left:10px;"><%= link_to image_tag("/assets/plus_icon.png", style:"color:#006699; text-decoration:none; border-radius:15px; border:2px solid black; background-color:white;padding:15px; width:30px; height:30px;"), extra_path %></i>
+				<i class="margin_left"><%= link_to image_tag("/assets/plus_icon.png"), extra_path %></i>
 				
-				<i style="margin-left:10px;"><%= link_to image_tag("/assets/book_icon.png", style:"color:#006699; text-decoration:none; border-radius:15px; border:2px solid black; background-color:white;padding:15px; width:30px; height:30px;"), experiences_path %></i>
+				<i class="margin_left"><%= link_to image_tag("/assets/book_icon.png"), experiences_path %></i>
 
-				<i style="margin-left:10px;"><%= link_to image_tag("/assets/phone_icon.png", style:"color:#006699; text-decoration:none; border-radius:15px; border:2px solid black; background-color:white;padding:15px; width:30px; height:30px;"), contact_path %></i>
+				<i class="margin_left"><%= link_to image_tag("/assets/phone_icon.png"), contact_path %></i>
 			
 		</div>
 	</div>
+
+	<div style="float:right; width:215px; height:50px; ">
+	
+		<i> <%= link_to image_tag("/assets//GitHubMark64.png",style:"width:30px; height:30px; background-color:#336699; border-radius:20px; float:right;") %></i>
+		<i> <%= link_to image_tag("/assets/google64.png",style:"width:30px; height:30px;background-color:#336699; border-radius:40px; float:right;"), "mailto:mattpua49@gmail.com" %> </i>
+		<i> <%= link_to image_tag("/assets/LinkedIn60.png",style:"width:30px; height:30px;background-color:#336699; float:right;")%></i>
+		<i> <%= link_to image_tag("/assets/fb50.png", style:"width:30px; height:30px;background-color:#336699; float:right;") %> </i>
+	</div>
 </div>
 
-<div style="background-color:white; color:#006699; border-radius: 30px;">
-	<h2 style="text-align:center; font-family:Helvetica; line-height: 2; font-weight:lighter; font-size:30px; border:3px solid black; border-radius:30px;">
+<div class="white border_30" style="margin-left:-50px; width:1600px;">
+	<h2  class="border_30 font_30">
 		<%= @description %>
 	</h2>
-	<% if !current_page?(root_path)%>
-		<div style="background-color: white; width: 65px; height: 64px; float:left;border: 3px solid black;overflow:hidden; border-radius: 30px;position: relative;top: -92px;left: -5px;">
-			<%= link_to image_tag("/assets/arrowLeft.png", style:"
-		    width: 40px; height: 40px;-webkit-transform: rotate(45deg);position: relative; -moz-transform:rotate(45deg);top: 15px;left: 15px;") , @prevLink %>
+<!--	<% if !current_page?(root_path)%>
+		<div class="white overflowHidden border_30 border3Black arrowLeft">
+			<%= link_to image_tag("/assets/arrowLeft.png", ) , @prevLink %>
 		</div>
 	<% end %>
 	<% if !current_page?(contact_path) %>
-		<div style="background-color: white; width: 65px; height: 64px; float:right;border: 3px solid black;overflow:hidden; border-radius: 30px;position: relative;top: -92px;">
-			<%= link_to image_tag("/assets/arrowRight.png", style:"
-		    width: 40px; height: 40px;-webkit-transform: rotate(45deg);position: relative; -moz-transform:rotate(45deg);top: 15px;left: 10px;") , @nextLink %>
+		<div class="white overflowHidden border_30 border3Black arrowRight">
+			<%= link_to image_tag("/assets/arrowRight.png") , @nextLink %>
 		</div>
-	<% end %>
+	<% end %>-->
 
 	
 </div>
