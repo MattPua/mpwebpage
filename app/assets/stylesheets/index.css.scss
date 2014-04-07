@@ -1,0 +1,98 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+p{
+	font-family:'Nobile';
+}
+h1,h2,h3,h4,h5{
+	font-family:'Raleway';
+}
+
+.border{
+	border: 2px solid black;
+}
+
+.title{
+	background-color: black;/*#033076*/
+	opacity: 0.66;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	#name {
+		font-weight: bolder;
+		font-size:72px;
+	}
+	> div{
+		color: white;
+	}
+	h2{
+		
+	}
+}
+
+.background, .irondragons, .yncn, .insite{
+	margin-top:40px;
+	margin-bottom:40px;
+	min-height:350px;
+	h3 {
+		font-size: 40px;
+		font-family:'BebasNeue';
+	}
+	p {
+		line-height: 2.5;
+		font-size: 16px;
+	}
+}
+
+.info{
+	margin-top:10px;
+	background-color: black;
+	opacity: 0.66;
+	color: white;
+	h3 {
+		font-size:40px;
+	}
+	h4 {
+		font-size: 20px;
+	}
+
+}
+
+.icons{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	> div:nth-child(1) >a > img{
+		width:150px;
+		height:150px;
+		margin: 0 auto;
+	}
+	> div:nth-child(2) >a > img{
+		height:150px;
+		width:150px;
+		margin: 0 auto;
+	}
+	> div:nth-child(3) >a > img{
+		width:250px;
+		height:125px;
+		margin: 0 auto;
+	}
+
+}
+
+@font-face{
+	font-family: Nobile;
+	font-url:('Nobile-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face{
+	font-family: BebasNeue;
+	font-url:('BebasNeue.otf');
+	font-weight: normal;
+	font-style:normal;
+}
+
+
+
+
