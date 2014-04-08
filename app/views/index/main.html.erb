@@ -1,139 +1,309 @@
-<div class="container-fluid">
-	<div class="row title">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="row">
-				<div class="col-md-12 text-left">
-				<h1 id="name"> Matthew Pua </h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-left">
-				<h2> Iron Lifting | Bathroom Singing | Engineering Student</h2>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="col-md-8 col-md-offset-2">
+    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> <!-- shows the number of dashes in the dropdown button -->
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse header" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#about-me-intro">About Me</a></li>
+	        <li><a href="#experiences-intro">Experience</a></li>
+	        <li><a href="#extra-intro">Personal Interests</a></li>
+	        <li><a href="#contact">Connect</a></li>
+
+	      </ul>
+
+	    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="row landing-block">
+	<div class="container-fluid">
+		<div>
+			<img src="/assets/premade.jpg" class="img-responsive landing-image" alt="Responsive Image">
+			<div class="overlay">
+				<div class="landing-content text-center col-md-6 col-md-offset-3">
+					<h1 id="welcome" class=""> Welcome </h1>
+					<h1 id="name" class=""> My Name is Matt </h1>
+					<h1 id="engineer" class=""> I am an Engineer in Training </h1>
+					<h1 id="developer" class=""> A Developer  </h1>
+					<h1 id="student" class=""> A student at UofT </h1>
+					<h1 id="oreo" class=""> I really love Oreos </h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row background">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="row">
-				<div class="col-md-12 text-left">
-					<h3> Who are you? </h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 text-left col-md-offset-1">
-					<p> I'm a soon to be fourth year Electrical and Computer Engineering Student studying at the University of Toronto majoring in Software development. </p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 text-left col-md-offset-1">
-					<p> I have a passion for entrepreneurship and career development. I'm also a dragonboat athlete on the side going for my third straight year. </p>
-				</div>
-			</div>
+</div>
+
+<div class="row about-me-intro"> 
+
+	<div class="container-fluid text-center">
+		<div class="col-md-4 col-md-offset-4">
+			<h1><span class="glyphicon glyphicon-user"></span>About Me</h1>
 		</div>
 	</div>
-	<div class="row irondragons hide" >
-		<div class="col-md-8 col-md-offset-2">
-			<div class="row">
-				<div class="col-md-12 text-left">
-					<h3> University of Toronto: Iron Dragons Dragonboat Team </h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 text-left col-md-offset-1">
-					<p> I'm currently a member of the University of Toronto Engineering Dragonboat Team. This is my third year competing with the team. We compete during the summer in competitions around Ontario such as the Milton Dragonboat Festival and the Toronto International Dragonboat Festival. Check out our team  <a href="http://dragonboat.skule.ca/">here. </a></p>
-				</div>
+</div>
+<a name="about-me-intro"></a>
+<div class="row about-me">
+	<div class="container-fluid holder">
+		<div class="row">
+			<div class="name col-md-4 col-md-offset-4 text-center">
+				<h1> Matthew Pua </h1>
+				<small> Iron Lifting | Bathroom Singing | Oreo Loving   </small>
 			</div>
 		</div>
+		<div class="row">
+			<div class="profile col-md-8 col-md-offset-2 text-center">
+				<div class="row">
+					<div class="col-md-4 icons-left">
+						<!-- <span class="glyphicon glyphicon-record"></span> 
+						<span class="glyphicon glyphicon-record"></span>
+						<p><small> Stuff here</small></p> -->
+						<a href="https://twitter.com/MattPua"><img src="/assets/twitter.png" class="img-circle"></a>
+						<a href="https://www.facebook.com/matt.pua.7"><img src="/assets/facebook.png" class="img-circle"></a>
+						<h5>Twitter | Facebook</h5>
+					</div>
+					<div class="col-md-4">
+						<img src="/assets/profile.jpg" class="img-circle border face">
+					</div>
+					<div class="col-md-4 icons-right">
+						<a href="https://github.com/MattPua"><img src="/assets/github.png" class="img-circle"></a>
+						<a href="http://ca.linkedin.com/pub/matthew-pua/49/a3b/97a/"><img src="/assets/linkedin.png" class="img-circle"></a>
+						<h5> Github | LinkedIn </h5>
+					</div>
+				</div>
+				<div class="row text-profile">
+					<div class="col-md-10 col-md-offset-1">
+						<h2> A Little Introduction </h2>
+						<div class="row">
+							<div class="col-md-6 introduction text-left">
+								<h3> What I Like </h3>
+								<ul class="list-group">
+									<li class="list-group-item">
+										Web Development 
+										<h5>(Ruby on Rails, CSS, HTML, JavaScript)</h5>
+									</li>
+									<li class="list-group-item">
+										Software Development 
+										<h5>(C, C++, Ruby)</h5>
+									</li>
+									<li class="list-group-item">
+										Business Development
+										<h5> (Sales, Marketing, Strategy)</h5>
+									</li>
+
+								</ul>
+							</div>
+
+							<div class="col-md-6 introduction text-left">
+								<h3> My Thoughts </h3>
+								<ul class="list-group">
+									<li class="list-group-item">
+										I'm a firm believer in learning by doing. I always like to be moving, thinking, and trying new things. There's hardly a time when you'll ever see me sitting still. I like to try and figure out how things work, break them apart if I can, and put them back together. I'm a big fan of tech and startups. I hope to give back to the world one day as an entrepreneur and always love hearing about new startups and crazy ideas.
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--
+						<div class="row contact border">
+							<h2> Contact Me </h2>
+							<h5><span class="glyphicon glyphicon-envelope"></span> mattpua49@gmail.com </h5>
+							<h5><span class="glyphicon glyphicon-globe"></span> Mississauga | Ontario | Canada </h5>
+						</div>-->
+					</div>
+				</div> <!-- end of text-profile block -->
+			</div> <!-- end of profile -->
+		</div> <!-- end of row -->
+	</div> <!-- end of holder container -->
+</div> <!-- end of about-me -->
+<div class="row experiences-intro">
+	<div class="container-fluid text-center">
+	<h1> <span class="glyphicon glyphicon-briefcase"></span> Experience</h1>
 	</div>
-	<div class="row yncn hide">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="row">
-				<div class="col-md-12 text-left">
-					<h3> You're Next Career Network </h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 text-left col-md-offset-1">
-					<p> The You're Next Career Network (YNCN) is a student organization at the University of Toronto dedicated to student professional development.</p>
-					<p>I was part of the organization for two years, and in my time there I started The Startup Hub. I also led the Largest Startup Career Expo in Canada in 2014. </p>
-					<p>
-					Check out some articles about the Startup Expo and my organization here:
-					<ul>
-						<li>
-							<a href="http://news.utoronto.ca/spotlight-startups-u-t-students-prep-canada%E2%80%99s-largest-startup-career-expo"> UofT News </a>
-						</li>
-						<li>
-							<a href="http://www.betakit.com/youre-next-career-networks-startup-expo-breaks-2000-attendee-mark/"> BetaKit </a>
-						</li>
-						<li>
-							<a href="http://www.nowdigitalnetwork.com/startup-career-expo-is-set-to-connect-students-with-hiring-companies/"> now Digital Network </a>
-						</li>
-						<li>
-							<a href="https://www.youtube.com/watch?v=6RacYPc4Ij0">A Short Video on the Event</a>
-						</li>
-					</ul>
-					</p>
-					<p>
-					Find out more about YNCN <a href="http://yourenext.ca/startup/expo"> here. </a>
-					</p>
-				</div>
+</div>
+<a name="experiences-intro"></a>
+<div class="row experiences">
+	<div class="container-fluid holder">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 text-center title">
+				<h2> What I Do </h2>
 			</div>
 		</div>
-	</div>
-	<div class="row hide insite">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="row">
-				<div class="col-md-12 text-left">
-					<h3> InsiteUofT </h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 text-left col-md-offset-1">
-					<p> InsiteUofT was a wekeend fling started at a local hackathon that turned into a full-blown project. It's aimed to be a free to use platform for University of Toronto students, specifically Engineering students, to find people that can help them prep for interviews.</p>
-					<p>  
-					InsiteUofT is a current work in progress. Check out it current's state 
-					<a href="http://insiteuoft.herokuapp.com"> here. </a>
-					</p>
-				</div>
+		<div class="row info">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-6 ">
+					<div class="col-md-1">
+						<h2><span class="glyphicon glyphicon glyphicon-cog"></span></h2>
+					</div>
+					<div class="col-md-11">
+						<h4> Insite - Co-Founder  </h4>
+						<h5><small> September 2013 - Present </small> </h5>
+						<p> Insite is a project that spun out of a hackathon at the University of Toronto. The goal of Insite is to create a free to use platform for UofT students to find other students to help them prepare for interviews. I operate as a full-stack ninja utilizing Ruby on Rails for the site. </p>
+					</div>
+				</div><!-- End of info block 1 -->
+				<div class="col-md-6 ">
+					<div class='col-md-1'>
+					<h2><span class="glyphicon glyphicon glyphicon-cog"></span></h2>
+					</div>
+					<div class="col-md-11">
+						<h4> Founder & Managing Director - The Startup Hub </h4>		
+						<h5><small> February 2013 - March 2014 </small> </h5>
+						<p> The Startup Hub is a student run initiative that I founded. Our goal was to develop the entrepreneurship community at the University of Toronto, to provide better resources for our entrepreneurs to be, and provide more startup student interaction. Under my management, our Flagship event, the Startup Career Expo 2014, was the largest Startup Career Event in Canada with over 80 Canadian startups and over 2,000 attendees. </p>
+					</div>
+				</div><!-- End of info block 2 -->
+				<div class="col-md-6 ">
+					<div class="col-md-1">
+						<h2><span class="glyphicon glyphicon glyphicon-cog"></span></h2>
+					</div>
+					<div class="col-md-11">
+						<h4> Startup Career Expo 2012 - Director of Operations</h4>
+						<h5><small> February 2011 - March 2012 </small> </h5>
+						<p> I was part of the team of 4 students that organized the first ever Startup Career Fair at the University of Toronto. I was in charge of all operations for the event which included event management, logistics, budget, finances, and other organizational details.  </p>
+					</div>
+				</div> <!-- End of info block 3 -->
+				<div class="col-md-6 ">
+					<div class="col-md-1">
+					<h2><span class="glyphicon glyphicon glyphicon-cog"></span></h2>
+					</div>
+					<div class="col-md-11">
+						<h4> Ruby on Rails Developer - Kiinzel </h4>
+						<h5><small> May 2013 - September 2013 </small> </h5>
+						<p> Kiinzel is a new local startup hoping to change the online market scene. I worked with them for a summer doing mostly back end work for their site using Ruby on Rails. I work on various features of the site such as infinite scrolling, Followers, and Information validation. </p>
+					</div>
+				</div> <!-- End of info block 4 -->
+			</div> <!--End of overall holder for blocks -->
+		</div> <!--End of Row info -->
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 text-center title">
+				<h2> What I Study </h2>
 			</div>
 		</div>
+		<div class="row study">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-6 ">
+					<div class="col-md-1">
+						<h2><span class="glyphicon glyphicon glyphicon-book"></span></h2>
+					</div>
+					<div class="col-md-11">
+						<h4> Bachelors Computer Engineering - Univeristy of Toronto  </h4>
+						<h5><small> September 2011 - Present </small> </h5>
+						<p> Currently finishing my third year of study at the University of Toronto. I specialize in software development taking courses such as: Operating Systems, Databases, Networks, & Algorithms. I've also taken more interesting courses such as an Entrepreneurship for Small Businesses and Philosophy.</p>
+					</div><!-- End of study block 1 -->
+				</div><!--End of overall holder for block -->
+				<div class="col-md-6 languages">
+					<div class="col-md-1">
+						<h2><span class="glyphicon glyphicon glyphicon-book"></span></h2>
+					</div>
+					<div class="col-md-11">
+					<h4> Languages I've worked with at school </h4>
+						<ul>
+							<li>
+								C / C++ 
+							</li>
+							<li>
+								Assembly / Verilog / Matlab
+							</li>
+							<li>
+								Java
+							</li>
+							<li>
+								SQL / Xquery / XML
+							</li>
+						</ul>
+					</div><!-- End of study block 2 -->
+				</div><!--End of overall holder for block -->
+			</div> 
+		</div> <!--End of Row study -->				
+	</div> <!-- End of holder container-->
+</div> <!-- End of experiences container -->
+<div class="row extra-intro">
+	<div class="container-fluid text-center">
+	<h1> <span class="glyphicon glyphicon-book"></span> Personal Interests </h1>
 	</div>
-
-
-
-	<div class="row info">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="row">
-				<div class="col-md-12 text-left">
-					<h2> Anything you want to know? </h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 text-left">
-					<h4> Click one of the icons below to find out more. </h4>
-				</div>
-			</div>
-			<div class="row icons">
-				<div class="col-md-4">
-					<a href="/" id="irondragons"><img src="/assets/IronDragons.png" class="img-responsive"></a>
-				</div>
-				<div class="col-md-4">
-					<a href="/" id="yncn"><img src="/assets/YNCN.png" class="img-responsive"></a>
-				</div>
-				<div class="col-md-4">
-					<a href="/" id="insite"><img src="/assets/insite-logo.png"  class="img-responsive"></a>
-				</div>
+</div>
+<a name="extra-intro"></a>
+<div class="row extras">
+	<div class="container-fluid holder">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 text-center title">
+				<h2> Random Things I Love </h2>
+				<small> I really love oreos </small>
 			</div>
 		</div>
-	</div>
+		<div class="row info">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="col-md-6 ">
+					<div class="col-md-1">
+						<h2><span class="glyphicon glyphicon glyphicon-cutlery"></span></h2>
 
-	<div class="row contact">
-		<div class="col-md-8 col-md-offset-2">
-
+					</div>
+					<div class="col-md-11">
+						<h4> Eating all the Food  </h4>
+						<h5><small> April 1993 - Present </small> </h5>
+						<p> I've loved to eat since day one. I'm usually hungry 99% of any day. I even get hungry probably about 10 minutes after leaving a buffet. I'll eat almost anything as long as it smells and looks good, though I can be pretty picky. I'm also a big sucker for fast food, especially burgers and fries.   </p>
+					</div>
+				</div><!-- End of extras block 1 -->
+				<div class="col-md-6 ">
+					<div class='col-md-1'>
+					<h2><span class="glyphicon glyphicon glyphicon-compressed"></span></h2>
+					</div>
+					<div class="col-md-11">
+						<h4> Personal Fitness </h4>		
+						<h5><small> I lift things up and put them down </small> </h5>
+						<p> I'm a big fan of physical exercise and weightlifting. I've been seriously doing it for about a year and a half now. There's almost nothing more satisfying than setting a new personal record on an exercise or lift. It's always amazing to see what physical potentials our bodies have as long as we can break our mental barriers.  </p>
+					</div>
+				</div><!-- End of extras block 2 -->
+				<div class="col-md-6 ">
+					<div class="col-md-1">
+						<h2><span class="glyphicon glyphicon glyphicon-star"></span></h2>
+					</div>
+					<div class="col-md-11">
+						<h4> Iron Dragons Dragonboat Team</h4>
+						<h5><small> January 2012 - Present </small> </h5>
+						<p> I'm a part of the University of Toronto Engineering Dragonboat Team. For those of you know who don't know what dragonboating is, read about it <a href="http://www.mountsinai.on.ca/staff/sinai-lightning/what-is-dragon-boat-racing">here.  </a> I've been paddling with the team for three years now and I continue to love the sport every single year. We've paddled in competitions around Ontario including the Milton Dragonboat Festival, the Toronto International Dragonboat Festival and the Montreal Challenge. I'm always excited to chat about the sport!</p>
+					</div>
+				</div> <!-- End of extras block 3 -->
+				<div class="col-md-6 ">
+					<div class="col-md-1">
+					<h2><span class="glyphicon glyphicon glyphicon-headphones"></span></h2>
+					</div>
+					<div class="col-md-11">
+						<h4> Music </h4>
+						<h5><small> Listen to Everything </small> </h5>
+						<p> Nothing can turn an otherwise crummy day around like a good song. Music helps me relieve stress, and unwind after a really busy day. I love discovering new music, and new genres of music. Most of the YouTube video's I've seen are a result of me jumping from one song to another, in the hopes of discovering something amazing. I also play the guitar and piano when I can, though I'm not too particuarly good at either of them. I'm also a secret bathroom singer. </p>
+					</div>
+				</div> <!-- End of extras block 4 -->
+			</div> <!--End of overall holder for blocks -->
+		</div> <!--End of Row Extras -->
+	</div> <!-- end of holder container -->
+</div> <!-- end of personal interests container -->
+<a name="contact"></a>
+<div class="row contact">
+	<div class="container-fluid text-center">
+		<div class="col-md-6 col-md-offset-3">
+			<h2> Want to know more about me? </h2> 
+			<h2> Send me an email.</h2> <a href="mailto:mattpua49@gmail.com"><img src="/assets/email.png"></a>
 		</div>
 	</div>
-
-
-
+</div>
+<!-- <div class="row social">
+	<div class="container-fluid holder">
+	</div>
+</div> -->
+<div class="row copyright">
+	<div class="container-fluid holder">
+		<div class="col-md-4 col-md-offset-2 copyright-info">
+			<small> <span class="glyphicon glyphicon-copyright-mark"></span> 2014 <strong> Matthew Pua </strong> All Rights Reserved. </small>
+		</div>
+		<div class="col-md-4 col-md-offset-2 copyright-info">
+			<small> Made for your mobile viewing pleasure. </small>
+		</div>
+	</div>
 </div>

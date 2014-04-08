@@ -21,8 +21,8 @@ gem 'binding_of_caller'
 gem 'jquery-ui-rails'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'bootstrap-sass'
-gem 'sqlite3'
-# gem 'pg', '0.12.2'
+#gem 'sqlite3'
+gem 'pg', '0.12.2'
 # Using PG Database
 
 # To use ActiveModel has_secure_password
